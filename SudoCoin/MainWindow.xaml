@@ -1,0 +1,45 @@
+﻿<Window x:Class="SudoCoin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudoCoin"
+        mc:Ignorable="d"
+        Title="SudoCoin" Height="585" Width="770" ResizeMode="CanMinimize" Icon="SudoCoin.gif" Background="#FFFAFAFA" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="69,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="598" FontSize="30" FontFamily="Quicksand" Foreground="#FF6F3497" FontWeight="Bold"><Run Text="Sudo"/><Run Text="C"/><Run Text="oin Client"/><LineBreak/><Run/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="43" Margin="15,10,0,0" VerticalAlignment="Top" Width="49" Source="SudoCoin.gif"/>
+        <Rectangle Fill="White" HorizontalAlignment="Center" Height="490" Margin="0,66,0,0" Stroke="Black" VerticalAlignment="Center" Width="753" StrokeThickness="0.1"/>
+        <Label Content="SudoCoin Client (c) 2021 M3X Studios, on behalf of Alfiee. All rights reserved" HorizontalAlignment="Left" VerticalAlignment="Top" Height="43" Width="743" Cursor="None" Margin="0,525,0,-12" FontSize="10" FontFamily="Quicksand"/>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="459" Margin="0,66,0,0" Stroke="Black" VerticalAlignment="Top" Width="337" StrokeThickness="0.1"/>
+        <WebBrowser HorizontalAlignment="Left" Height="445" Margin="10,75,0,0" VerticalAlignment="Top" Width="318" Source="https://coin.sudocode1.xyz"/>
+        <Label Content="My SDC balance" HorizontalAlignment="Left" Margin="492,100,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Quicksand" Foreground="#FF747474" FontWeight="Bold"/>
+        <Label Content="Unavailable" Margin="449,110,119,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FF474747" FontFamily="Kalam" Height="63" FontSize="36" FontWeight="Bold"/>
+        <Label Content="$1.4 = ~0.009 SDC" HorizontalAlignment="Left" Margin="485,155,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Quicksand" Foreground="#FF747474" FontSize="13" FontWeight="Bold"/>
+        <Rectangle Fill="#FFFAFAFA" HorizontalAlignment="Left" Height="160" Margin="337,291,0,0" Stroke="Black" VerticalAlignment="Top" Width="421" StrokeThickness="0.1"/>
+        <Label Content="SudoCoin BETA V0.02&#xD;&#xA;Created by Alfiee#0265" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="218" Cursor="None" Margin="655,66,-109,0" FontSize="8" FontFamily="Quicksand"/>
+        <Button x:Name="ReadAPI" Content="Read the API" HorizontalAlignment="Left" Margin="668,6,0,0" VerticalAlignment="Top" Width="75" Background="#FFB361E8" Click="ReadAPI_Click" BorderThickness="0.55" BorderBrush="#FF463860" Foreground="White" FontFamily="Quicksand" FontWeight="Bold" FontSize="11"/>
+        <Button x:Name="Sign_Up" Content="Sign-up" HorizontalAlignment="Left" Margin="668,29,0,0" VerticalAlignment="Top" Width="75" Background="#FFB261E8" Click="Sign_Up_Click" BorderThickness="0.55" Foreground="White" FontFamily="Quicksand" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="78" Margin="502,331,0,0" VerticalAlignment="Top" Width="77" Source="SudoCoin.gif">
+            <Image.Effect>
+                <BlurEffect Radius="15" KernelType="Box"/>
+            </Image.Effect>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="67" Margin="507,336,0,0" VerticalAlignment="Top" Width="66" Source="SudoCoin.gif"/>
+        <Rectangle Fill="#FFFAFAFA" HorizontalAlignment="Left" Height="64" Margin="337,456,0,0" Stroke="Black" VerticalAlignment="Top" Width="230" StrokeThickness="0.1"/>
+        <Label Content="Networks Mining" HorizontalAlignment="Left" Margin="397,495,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Quicksand" Foreground="#FF747474" FontWeight="Bold"/>
+        <Button x:Name="Available" Content="Available soon" HorizontalAlignment="Left" Margin="478,204,0,0" VerticalAlignment="Top" Width="135" Background="White" BorderThickness="0.55" BorderBrush="#FFB96161" Foreground="#FFB96161" FontFamily="Quicksand" FontWeight="Bold" FontSize="16" Height="31" Cursor="No" Click="Available_Copy_Click"/>
+        <Label Content="Disabled" Margin="485,403,151,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FF474747" FontFamily="Quicksand" Height="36" FontSize="24" FontWeight="Bold"/>
+        <Label Content="Miner" Margin="502,295,169,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FF474747" FontFamily="Quicksand" Height="36" FontSize="24" FontWeight="Bold"/>
+        <Label Content="0" Margin="433,451,283,0" VerticalAlignment="Top" Background="#00000000" Foreground="#FF474747" FontFamily="Quicksand" Height="51" FontSize="36" FontWeight="Bold"/>
+        <Label Content="(Price is user determined - price displayed above is average of user prices)" HorizontalAlignment="Left" Margin="397,173,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Quicksand" Foreground="#FF747474" FontWeight="Bold" FontSize="8"/>
+        <Button x:Name="ReadAPI_Copy" Content="Read the API" HorizontalAlignment="Left" Margin="668,6,0,0" VerticalAlignment="Top" Width="75" Background="#FFB361E8" Click="ReadAPI_Click" BorderThickness="0.55" BorderBrush="#FF463860" Foreground="White" FontFamily="Quicksand" FontWeight="Bold" FontSize="11"/>
+        <Rectangle Fill="#FFFAFAFA" HorizontalAlignment="Left" Height="64" Margin="572,456,0,0" Stroke="Black" VerticalAlignment="Top" Width="186" StrokeThickness="0.1"/>
+        <Label Content="Want to buy things with SDC?" HorizontalAlignment="Left" Margin="574,456,0,0" VerticalAlignment="Top" Background="#00000000" FontFamily="Quicksand" Foreground="#FF747474" FontWeight="Bold" Width="184"/>
+        <Button x:Name="Available_Copy" Content="Visit the Store" HorizontalAlignment="Left" Margin="600,481,0,0" VerticalAlignment="Top" Width="134" Background="White" BorderThickness="0.55" BorderBrush="#FF8D61B9" Foreground="#FF8D61B9" FontFamily="Quicksand" FontWeight="Bold" FontSize="16" Height="31" Cursor="Arrow" Click="StoreOpen"/>
+
+    </Grid>
+</Window>

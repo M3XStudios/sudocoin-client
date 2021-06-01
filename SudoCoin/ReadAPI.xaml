@@ -1,0 +1,14 @@
+﻿<Window x:Class="SudoCoin.ReadAPI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SudoCoin"
+        mc:Ignorable="d"
+        Title="ReadAPI" Height="585" Width="801.5" ResizeMode="CanMinimize" Icon="SudoCoin.gif" Background="#FFF3F3F3" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <WebBrowser HorizontalAlignment="Left" Height="491" VerticalAlignment="Top" Width="796" Source="https://coin.sudocode1.xyz/api"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="624,496,0,0" VerticalAlignment="Top" Width="145" Height="45" BorderThickness="1" FontSize="28" Background="#FFFAFAFA" Click="Button_Click" FontFamily="Quicksand SemiBold"/>
+
+    </Grid>
+</Window>
